@@ -2072,7 +2072,7 @@ behaviors {
         #binding-cells = <2>;
         bindings = <&kp>, <&left_ring1_tap>;
     };
-    #define LeftRing1Pinky left_ring1_pinky LEFT_PINKY_MOD LEFT_PINKY_KEY
+    #define LeftRing1Pinky left_ring1_pinky_bilateral LEFT_PINKY_MOD LEFT_PINKY_KEY
     #ifndef LEFT_RING2_PINKY_HOLDING_TYPE
     #define LEFT_RING2_PINKY_HOLDING_TYPE LEFT_RING2_CHORD_HOLDING_TYPE
     #endif
@@ -2107,7 +2107,7 @@ behaviors {
         #binding-cells = <2>;
         bindings = <&kp>, <&left_ring2_tap>;
     };
-    #define LeftRing2Pinky left_ring2_pinky LEFT_PINKY_MOD LEFT_PINKY_KEY
+    #define LeftRing2Pinky left_ring2_pinky_bilateral LEFT_PINKY_MOD LEFT_PINKY_KEY
     #ifndef LEFT_MIDDY_PINKY_HOLDING_TYPE
     #define LEFT_MIDDY_PINKY_HOLDING_TYPE LEFT_MIDDY_CHORD_HOLDING_TYPE
     #endif
@@ -2142,7 +2142,7 @@ behaviors {
         #binding-cells = <2>;
         bindings = <&kp>, <&left_middy_tap>;
     };
-    #define LeftMiddyPinky left_middy_pinky LEFT_PINKY_MOD LEFT_PINKY_KEY
+    #define LeftMiddyPinky left_middy_pinky_bilateral LEFT_PINKY_MOD LEFT_PINKY_KEY
     #ifndef LEFT_INDEX_PINKY_HOLDING_TYPE
     #define LEFT_INDEX_PINKY_HOLDING_TYPE LEFT_INDEX_CHORD_HOLDING_TYPE
     #endif
@@ -2177,7 +2177,7 @@ behaviors {
         #binding-cells = <2>;
         bindings = <&kp>, <&left_index_tap>;
     };
-    #define LeftIndexPinky left_index_pinky LEFT_PINKY_MOD LEFT_PINKY_KEY
+    #define LeftIndexPinky left_index_pinky_bilateral LEFT_PINKY_MOD LEFT_PINKY_KEY
     #ifndef RIGHT_RING1_PINKY_HOLDING_TYPE
     #define RIGHT_RING1_PINKY_HOLDING_TYPE RIGHT_RING1_CHORD_HOLDING_TYPE
     #endif
@@ -2212,7 +2212,7 @@ behaviors {
         #binding-cells = <2>;
         bindings = <&kp>, <&right_ring1_tap>;
     };
-    #define RightRing1Pinky right_ring1_pinky RIGHT_PINKY_MOD RIGHT_PINKY_KEY
+    #define RightRing1Pinky right_ring1_pinky_bilateral RIGHT_PINKY_MOD RIGHT_PINKY_KEY
     #ifndef RIGHT_RING2_PINKY_HOLDING_TYPE
     #define RIGHT_RING2_PINKY_HOLDING_TYPE RIGHT_RING2_CHORD_HOLDING_TYPE
     #endif
@@ -2247,7 +2247,7 @@ behaviors {
         #binding-cells = <2>;
         bindings = <&kp>, <&right_ring2_tap>;
     };
-    #define RightRing2Pinky right_ring2_pinky RIGHT_PINKY_MOD RIGHT_PINKY_KEY
+    #define RightRing2Pinky right_ring2_pinky_bilateral RIGHT_PINKY_MOD RIGHT_PINKY_KEY
     #ifndef RIGHT_MIDDY_PINKY_HOLDING_TYPE
     #define RIGHT_MIDDY_PINKY_HOLDING_TYPE RIGHT_MIDDY_CHORD_HOLDING_TYPE
     #endif
@@ -2282,7 +2282,7 @@ behaviors {
         #binding-cells = <2>;
         bindings = <&kp>, <&right_middy_tap>;
     };
-    #define RightMiddyPinky right_middy_pinky RIGHT_PINKY_MOD RIGHT_PINKY_KEY
+    #define RightMiddyPinky right_middy_pinky_bilateral RIGHT_PINKY_MOD RIGHT_PINKY_KEY
     #ifndef RIGHT_INDEX_PINKY_HOLDING_TYPE
     #define RIGHT_INDEX_PINKY_HOLDING_TYPE RIGHT_INDEX_CHORD_HOLDING_TYPE
     #endif
@@ -2317,7 +2317,7 @@ behaviors {
         #binding-cells = <2>;
         bindings = <&kp>, <&right_index_tap>;
     };
-    #define RightIndexPinky right_index_pinky RIGHT_PINKY_MOD RIGHT_PINKY_KEY
+    #define RightIndexPinky right_index_pinky_bilateral RIGHT_PINKY_MOD RIGHT_PINKY_KEY
     #ifndef LEFT_PINKY_RING1_HOLDING_TYPE
     #define LEFT_PINKY_RING1_HOLDING_TYPE LEFT_PINKY_CHORD_HOLDING_TYPE
     #endif
@@ -2352,7 +2352,7 @@ behaviors {
         #binding-cells = <2>;
         bindings = <&kp>, <&left_pinky_tap>;
     };
-    #define LeftPinkyRing1 left_pinky_ring1 LEFT_RING1_MOD LEFT_RING1_KEY
+    #define LeftPinkyRing1 left_pinky_ring1_bilateral LEFT_RING1_MOD LEFT_RING1_KEY
     #ifndef LEFT_RING2_RING1_HOLDING_TYPE
     #define LEFT_RING2_RING1_HOLDING_TYPE LEFT_RING2_CHORD_HOLDING_TYPE
     #endif
@@ -2387,7 +2387,7 @@ behaviors {
         #binding-cells = <2>;
         bindings = <&kp>, <&left_ring2_tap>;
     };
-    #define LeftRing2Ring1 left_ring2_ring1 LEFT_RING1_MOD LEFT_RING1_KEY
+    #define LeftRing2Ring1 left_ring2_ring1_bilateral LEFT_RING1_MOD LEFT_RING1_KEY
     #ifndef LEFT_MIDDY_RING1_HOLDING_TYPE
     #define LEFT_MIDDY_RING1_HOLDING_TYPE LEFT_MIDDY_CHORD_HOLDING_TYPE
     #endif
@@ -2422,7 +2422,7 @@ behaviors {
         #binding-cells = <2>;
         bindings = <&kp>, <&left_middy_tap>;
     };
-    #define LeftMiddyRing1 left_middy_ring1 LEFT_RING1_MOD LEFT_RING1_KEY
+    #define LeftMiddyRing1 left_middy_ring1_bilateral LEFT_RING1_MOD LEFT_RING1_KEY
     #ifndef LEFT_INDEX_RING1_HOLDING_TYPE
     #define LEFT_INDEX_RING1_HOLDING_TYPE LEFT_INDEX_CHORD_HOLDING_TYPE
     #endif
@@ -2457,7 +2457,7 @@ behaviors {
         #binding-cells = <2>;
         bindings = <&kp>, <&left_index_tap>;
     };
-    #define LeftIndexRing1 left_index_ring1 LEFT_RING1_MOD LEFT_RING1_KEY
+    #define LeftIndexRing1 left_index_ring1_bilateral LEFT_RING1_MOD LEFT_RING1_KEY
     #ifndef RIGHT_PINKY_RING1_HOLDING_TYPE
     #define RIGHT_PINKY_RING1_HOLDING_TYPE RIGHT_PINKY_CHORD_HOLDING_TYPE
     #endif
@@ -2492,7 +2492,7 @@ behaviors {
         #binding-cells = <2>;
         bindings = <&kp>, <&right_pinky_tap>;
     };
-    #define RightPinkyRing1 right_pinky_ring1 RIGHT_RING1_MOD RIGHT_RING1_KEY
+    #define RightPinkyRing1 right_pinky_ring1_bilateral RIGHT_RING1_MOD RIGHT_RING1_KEY
     #ifndef RIGHT_RING2_RING1_HOLDING_TYPE
     #define RIGHT_RING2_RING1_HOLDING_TYPE RIGHT_RING2_CHORD_HOLDING_TYPE
     #endif
@@ -2527,7 +2527,7 @@ behaviors {
         #binding-cells = <2>;
         bindings = <&kp>, <&right_ring2_tap>;
     };
-    #define RightRing2Ring1 right_ring2_ring1 RIGHT_RING1_MOD RIGHT_RING1_KEY
+    #define RightRing2Ring1 right_ring2_ring1_bilateral RIGHT_RING1_MOD RIGHT_RING1_KEY
     #ifndef RIGHT_MIDDY_RING1_HOLDING_TYPE
     #define RIGHT_MIDDY_RING1_HOLDING_TYPE RIGHT_MIDDY_CHORD_HOLDING_TYPE
     #endif
@@ -2562,7 +2562,7 @@ behaviors {
         #binding-cells = <2>;
         bindings = <&kp>, <&right_middy_tap>;
     };
-    #define RightMiddyRing1 right_middy_ring1 RIGHT_RING1_MOD RIGHT_RING1_KEY
+    #define RightMiddyRing1 right_middy_ring1_bilateral RIGHT_RING1_MOD RIGHT_RING1_KEY
     #ifndef RIGHT_INDEX_RING1_HOLDING_TYPE
     #define RIGHT_INDEX_RING1_HOLDING_TYPE RIGHT_INDEX_CHORD_HOLDING_TYPE
     #endif
@@ -2597,7 +2597,7 @@ behaviors {
         #binding-cells = <2>;
         bindings = <&kp>, <&right_index_tap>;
     };
-    #define RightIndexRing1 right_index_ring1 RIGHT_RING1_MOD RIGHT_RING1_KEY
+    #define RightIndexRing1 right_index_ring1_bilateral RIGHT_RING1_MOD RIGHT_RING1_KEY
     #ifndef LEFT_PINKY_RING2_HOLDING_TYPE
     #define LEFT_PINKY_RING2_HOLDING_TYPE LEFT_PINKY_CHORD_HOLDING_TYPE
     #endif
@@ -2632,7 +2632,7 @@ behaviors {
         #binding-cells = <2>;
         bindings = <&kp>, <&left_pinky_tap>;
     };
-    #define LeftPinkyRing2 left_pinky_ring2 LEFT_RING2_MOD LEFT_RING2_KEY
+    #define LeftPinkyRing2 left_pinky_ring2_bilateral LEFT_RING2_MOD LEFT_RING2_KEY
     #ifndef LEFT_RING1_RING2_HOLDING_TYPE
     #define LEFT_RING1_RING2_HOLDING_TYPE LEFT_RING1_CHORD_HOLDING_TYPE
     #endif
@@ -2667,7 +2667,7 @@ behaviors {
         #binding-cells = <2>;
         bindings = <&kp>, <&left_ring1_tap>;
     };
-    #define LeftRing1Ring2 left_ring1_ring2 LEFT_RING2_MOD LEFT_RING2_KEY
+    #define LeftRing1Ring2 left_ring1_ring2_bilateral LEFT_RING2_MOD LEFT_RING2_KEY
     #ifndef LEFT_MIDDY_RING2_HOLDING_TYPE
     #define LEFT_MIDDY_RING2_HOLDING_TYPE LEFT_MIDDY_CHORD_HOLDING_TYPE
     #endif
@@ -2702,7 +2702,7 @@ behaviors {
         #binding-cells = <2>;
         bindings = <&kp>, <&left_middy_tap>;
     };
-    #define LeftMiddyRing2 left_middy_ring2 LEFT_RING2_MOD LEFT_RING2_KEY
+    #define LeftMiddyRing2 left_middy_ring2_bilateral LEFT_RING2_MOD LEFT_RING2_KEY
     #ifndef LEFT_INDEX_RING2_HOLDING_TYPE
     #define LEFT_INDEX_RING2_HOLDING_TYPE LEFT_INDEX_CHORD_HOLDING_TYPE
     #endif
@@ -2737,7 +2737,7 @@ behaviors {
         #binding-cells = <2>;
         bindings = <&kp>, <&left_index_tap>;
     };
-    #define LeftIndexRing2 left_index_ring2 LEFT_RING2_MOD LEFT_RING2_KEY
+    #define LeftIndexRing2 left_index_ring2_bilateral LEFT_RING2_MOD LEFT_RING2_KEY
     #ifndef RIGHT_PINKY_RING2_HOLDING_TYPE
     #define RIGHT_PINKY_RING2_HOLDING_TYPE RIGHT_PINKY_CHORD_HOLDING_TYPE
     #endif
@@ -2772,7 +2772,7 @@ behaviors {
         #binding-cells = <2>;
         bindings = <&kp>, <&right_pinky_tap>;
     };
-    #define RightPinkyRing2 right_pinky_ring2 RIGHT_RING2_MOD RIGHT_RING2_KEY
+    #define RightPinkyRing2 right_pinky_ring2_bilateral RIGHT_RING2_MOD RIGHT_RING2_KEY
     #ifndef RIGHT_RING1_RING2_HOLDING_TYPE
     #define RIGHT_RING1_RING2_HOLDING_TYPE RIGHT_RING1_CHORD_HOLDING_TYPE
     #endif
@@ -2807,7 +2807,7 @@ behaviors {
         #binding-cells = <2>;
         bindings = <&kp>, <&right_ring1_tap>;
     };
-    #define RightRing1Ring2 right_ring1_ring2 RIGHT_RING2_MOD RIGHT_RING2_KEY
+    #define RightRing1Ring2 right_ring1_ring2_bilateral RIGHT_RING2_MOD RIGHT_RING2_KEY
     #ifndef RIGHT_MIDDY_RING2_HOLDING_TYPE
     #define RIGHT_MIDDY_RING2_HOLDING_TYPE RIGHT_MIDDY_CHORD_HOLDING_TYPE
     #endif
@@ -2842,7 +2842,7 @@ behaviors {
         #binding-cells = <2>;
         bindings = <&kp>, <&right_middy_tap>;
     };
-    #define RightMiddyRing2 right_middy_ring2 RIGHT_RING2_MOD RIGHT_RING2_KEY
+    #define RightMiddyRing2 right_middy_ring2_bilateral RIGHT_RING2_MOD RIGHT_RING2_KEY
     #ifndef RIGHT_INDEX_RING2_HOLDING_TYPE
     #define RIGHT_INDEX_RING2_HOLDING_TYPE RIGHT_INDEX_CHORD_HOLDING_TYPE
     #endif
@@ -2877,7 +2877,7 @@ behaviors {
         #binding-cells = <2>;
         bindings = <&kp>, <&right_index_tap>;
     };
-    #define RightIndexRing2 right_index_ring2 RIGHT_RING2_MOD RIGHT_RING2_KEY
+    #define RightIndexRing2 right_index_ring2_bilateral RIGHT_RING2_MOD RIGHT_RING2_KEY
     #ifndef LEFT_PINKY_MIDDY_HOLDING_TYPE
     #define LEFT_PINKY_MIDDY_HOLDING_TYPE LEFT_PINKY_CHORD_HOLDING_TYPE
     #endif
@@ -2912,7 +2912,7 @@ behaviors {
         #binding-cells = <2>;
         bindings = <&kp>, <&left_pinky_tap>;
     };
-    #define LeftPinkyMiddy left_pinky_middy LEFT_MIDDY_MOD LEFT_MIDDY_KEY
+    #define LeftPinkyMiddy left_pinky_middy_bilateral LEFT_MIDDY_MOD LEFT_MIDDY_KEY
     #ifndef LEFT_RING1_MIDDY_HOLDING_TYPE
     #define LEFT_RING1_MIDDY_HOLDING_TYPE LEFT_RING1_CHORD_HOLDING_TYPE
     #endif
@@ -2947,7 +2947,7 @@ behaviors {
         #binding-cells = <2>;
         bindings = <&kp>, <&left_ring1_tap>;
     };
-    #define LeftRing1Middy left_ring1_middy LEFT_MIDDY_MOD LEFT_MIDDY_KEY
+    #define LeftRing1Middy left_ring1_middy_bilateral LEFT_MIDDY_MOD LEFT_MIDDY_KEY
     #ifndef LEFT_RING2_MIDDY_HOLDING_TYPE
     #define LEFT_RING2_MIDDY_HOLDING_TYPE LEFT_RING2_CHORD_HOLDING_TYPE
     #endif
@@ -2982,7 +2982,7 @@ behaviors {
         #binding-cells = <2>;
         bindings = <&kp>, <&left_ring2_tap>;
     };
-    #define LeftRing2Middy left_ring2_middy LEFT_MIDDY_MOD LEFT_MIDDY_KEY
+    #define LeftRing2Middy left_ring2_middy_bilateral LEFT_MIDDY_MOD LEFT_MIDDY_KEY
     #ifndef LEFT_INDEX_MIDDY_HOLDING_TYPE
     #define LEFT_INDEX_MIDDY_HOLDING_TYPE LEFT_INDEX_CHORD_HOLDING_TYPE
     #endif
@@ -3017,7 +3017,7 @@ behaviors {
         #binding-cells = <2>;
         bindings = <&kp>, <&left_index_tap>;
     };
-    #define LeftIndexMiddy left_index_middy LEFT_MIDDY_MOD LEFT_MIDDY_KEY
+    #define LeftIndexMiddy left_index_middy_bilateral LEFT_MIDDY_MOD LEFT_MIDDY_KEY
     #ifndef RIGHT_PINKY_MIDDY_HOLDING_TYPE
     #define RIGHT_PINKY_MIDDY_HOLDING_TYPE RIGHT_PINKY_CHORD_HOLDING_TYPE
     #endif
@@ -3052,7 +3052,7 @@ behaviors {
         #binding-cells = <2>;
         bindings = <&kp>, <&right_pinky_tap>;
     };
-    #define RightPinkyMiddy right_pinky_middy RIGHT_MIDDY_MOD RIGHT_MIDDY_KEY
+    #define RightPinkyMiddy right_pinky_middy_bilateral RIGHT_MIDDY_MOD RIGHT_MIDDY_KEY
     #ifndef RIGHT_RING1_MIDDY_HOLDING_TYPE
     #define RIGHT_RING1_MIDDY_HOLDING_TYPE RIGHT_RING1_CHORD_HOLDING_TYPE
     #endif
@@ -3087,7 +3087,7 @@ behaviors {
         #binding-cells = <2>;
         bindings = <&kp>, <&right_ring1_tap>;
     };
-    #define RightRing1Middy right_ring1_middy RIGHT_MIDDY_MOD RIGHT_MIDDY_KEY
+    #define RightRing1Middy right_ring1_middy_bilateral RIGHT_MIDDY_MOD RIGHT_MIDDY_KEY
     #ifndef RIGHT_RING2_MIDDY_HOLDING_TYPE
     #define RIGHT_RING2_MIDDY_HOLDING_TYPE RIGHT_RING2_CHORD_HOLDING_TYPE
     #endif
@@ -3122,7 +3122,7 @@ behaviors {
         #binding-cells = <2>;
         bindings = <&kp>, <&right_ring2_tap>;
     };
-    #define RightRing2Middy right_ring2_middy RIGHT_MIDDY_MOD RIGHT_MIDDY_KEY
+    #define RightRing2Middy right_ring2_middy_bilateral RIGHT_MIDDY_MOD RIGHT_MIDDY_KEY
     #ifndef RIGHT_INDEX_MIDDY_HOLDING_TYPE
     #define RIGHT_INDEX_MIDDY_HOLDING_TYPE RIGHT_INDEX_CHORD_HOLDING_TYPE
     #endif
@@ -3157,7 +3157,7 @@ behaviors {
         #binding-cells = <2>;
         bindings = <&kp>, <&right_index_tap>;
     };
-    #define RightIndexMiddy right_index_middy RIGHT_MIDDY_MOD RIGHT_MIDDY_KEY
+    #define RightIndexMiddy right_index_middy_bilateral RIGHT_MIDDY_MOD RIGHT_MIDDY_KEY
     #ifndef LEFT_PINKY_INDEX_HOLDING_TYPE
     #define LEFT_PINKY_INDEX_HOLDING_TYPE LEFT_PINKY_CHORD_HOLDING_TYPE
     #endif
@@ -3192,7 +3192,7 @@ behaviors {
         #binding-cells = <2>;
         bindings = <&kp>, <&left_pinky_tap>;
     };
-    #define LeftPinkyIndex left_pinky_index LEFT_INDEX_MOD LEFT_INDEX_KEY
+    #define LeftPinkyIndex left_pinky_index_bilateral LEFT_INDEX_MOD LEFT_INDEX_KEY
     #ifndef LEFT_RING1_INDEX_HOLDING_TYPE
     #define LEFT_RING1_INDEX_HOLDING_TYPE LEFT_RING1_CHORD_HOLDING_TYPE
     #endif
@@ -3227,7 +3227,7 @@ behaviors {
         #binding-cells = <2>;
         bindings = <&kp>, <&left_ring1_tap>;
     };
-    #define LeftRing1Index left_ring1_index LEFT_INDEX_MOD LEFT_INDEX_KEY
+    #define LeftRing1Index left_ring1_index_bilateral LEFT_INDEX_MOD LEFT_INDEX_KEY
     #ifndef LEFT_RING2_INDEX_HOLDING_TYPE
     #define LEFT_RING2_INDEX_HOLDING_TYPE LEFT_RING2_CHORD_HOLDING_TYPE
     #endif
@@ -3262,7 +3262,7 @@ behaviors {
         #binding-cells = <2>;
         bindings = <&kp>, <&left_ring2_tap>;
     };
-    #define LeftRing2Index left_ring2_index LEFT_INDEX_MOD LEFT_INDEX_KEY
+    #define LeftRing2Index left_ring2_index_bilateral LEFT_INDEX_MOD LEFT_INDEX_KEY
     #ifndef LEFT_MIDDY_INDEX_HOLDING_TYPE
     #define LEFT_MIDDY_INDEX_HOLDING_TYPE LEFT_MIDDY_CHORD_HOLDING_TYPE
     #endif
@@ -3297,7 +3297,7 @@ behaviors {
         #binding-cells = <2>;
         bindings = <&kp>, <&left_middy_tap>;
     };
-    #define LeftMiddyIndex left_middy_index LEFT_INDEX_MOD LEFT_INDEX_KEY
+    #define LeftMiddyIndex left_middy_index_bilateral LEFT_INDEX_MOD LEFT_INDEX_KEY
     #ifndef RIGHT_PINKY_INDEX_HOLDING_TYPE
     #define RIGHT_PINKY_INDEX_HOLDING_TYPE RIGHT_PINKY_CHORD_HOLDING_TYPE
     #endif
@@ -3332,7 +3332,7 @@ behaviors {
         #binding-cells = <2>;
         bindings = <&kp>, <&right_pinky_tap>;
     };
-    #define RightPinkyIndex right_pinky_index RIGHT_INDEX_MOD RIGHT_INDEX_KEY
+    #define RightPinkyIndex right_pinky_index_bilateral RIGHT_INDEX_MOD RIGHT_INDEX_KEY
     #ifndef RIGHT_RING1_INDEX_HOLDING_TYPE
     #define RIGHT_RING1_INDEX_HOLDING_TYPE RIGHT_RING1_CHORD_HOLDING_TYPE
     #endif
@@ -3367,7 +3367,7 @@ behaviors {
         #binding-cells = <2>;
         bindings = <&kp>, <&right_ring1_tap>;
     };
-    #define RightRing1Index right_ring1_index RIGHT_INDEX_MOD RIGHT_INDEX_KEY
+    #define RightRing1Index right_ring1_index_bilateral RIGHT_INDEX_MOD RIGHT_INDEX_KEY
     #ifndef RIGHT_RING2_INDEX_HOLDING_TYPE
     #define RIGHT_RING2_INDEX_HOLDING_TYPE RIGHT_RING2_CHORD_HOLDING_TYPE
     #endif
@@ -3402,7 +3402,7 @@ behaviors {
         #binding-cells = <2>;
         bindings = <&kp>, <&right_ring2_tap>;
     };
-    #define RightRing2Index right_ring2_index RIGHT_INDEX_MOD RIGHT_INDEX_KEY
+    #define RightRing2Index right_ring2_index_bilateral RIGHT_INDEX_MOD RIGHT_INDEX_KEY
     #ifndef RIGHT_MIDDY_INDEX_HOLDING_TYPE
     #define RIGHT_MIDDY_INDEX_HOLDING_TYPE RIGHT_MIDDY_CHORD_HOLDING_TYPE
     #endif
@@ -3437,7 +3437,7 @@ behaviors {
         #binding-cells = <2>;
         bindings = <&kp>, <&right_middy_tap>;
     };
-    #define RightMiddyIndex right_middy_index RIGHT_INDEX_MOD RIGHT_INDEX_KEY
+    #define RightMiddyIndex right_middy_index_bilateral RIGHT_INDEX_MOD RIGHT_INDEX_KEY
 
     //
     // Key repetition access keys on the index fingers

@@ -699,7 +699,7 @@ behaviors {
         if chord
           constant = format_constant(hand, chord)
     %>
-    #define <%= target_CamelCase %> <%= target %> <%= constant %>_MOD <%= constant %>_KEY
+    #define <%= target_CamelCase %> <%= target %>_bilateral <%= constant %>_MOD <%= constant %>_KEY
     <%
         else
           constant = format_constant(hand, finger)
