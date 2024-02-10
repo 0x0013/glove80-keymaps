@@ -51,7 +51,7 @@ atop the "Custom Defined Behaviors" text box in your clone of this keymap:
 
 Next, let's become familiar with the powerful concept of [home row mods][HRM],
 which are dual-function keys that send normal keycodes (such as the letter `A`
-or the number `1`) when tapped, and send modifiers (such as Shift) when held.
+or the number `1`) when tapped or modifiers (such as Shift or Ctrl) when held.
 
 ![Concept diagram of *home row mods* on a row-staggered keyboard][HRM_diagram]
 
