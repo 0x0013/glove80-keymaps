@@ -4335,6 +4335,30 @@ macros {
         bindings = <&world_c_cedilla_lower>, <&world_c_cedilla_upper>;
         mods = <MOD_LSFT>;
     };
+    UNICODE(world_c_caron_lower, /* č */
+      #if UNICODE_TARGET_OS == 'L'
+        COMPOSE_SEQ_LINUX(&kp C &kp C)
+      #elif UNICODE_TARGET_OS == 'M'
+        COMPOSE_SEQ_MACOS(&kp LA(V) &kp C)
+      #elif UNICODE_TARGET_OS == 'W'
+        COMPOSE_SEQ_WINDOWS(&kp KP_N0 &kp KP_N2 &kp KP_N6 &kp KP_N9)
+      #endif
+    )
+    UNICODE(world_c_caron_upper, /* Č */
+      #if UNICODE_TARGET_OS == 'L'
+        COMPOSE_SEQ_LINUX(&kp C &kp LS(C))
+      #elif UNICODE_TARGET_OS == 'M'
+        COMPOSE_SEQ_MACOS(&kp LA(V) &kp LS(C))
+      #elif UNICODE_TARGET_OS == 'W'
+        COMPOSE_SEQ_WINDOWS(&kp KP_N0 &kp KP_N2 &kp KP_N6 &kp KP_N8)
+      #endif
+    )
+    world_c_caron: world_c_caron {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&world_c_caron_lower>, <&world_c_caron_upper>;
+        mods = <MOD_LSFT>;
+    };
     UNICODE(world_i_acute_lower, /* í */
       #if UNICODE_TARGET_OS == 'L'
         COMPOSE_SEQ_LINUX(&kp SQT &kp I)
@@ -4431,6 +4455,30 @@ macros {
         bindings = <&world_i_grave_lower>, <&world_i_grave_upper>;
         mods = <MOD_LSFT>;
     };
+    UNICODE(world_i_macron_lower, /* ī */
+      #if UNICODE_TARGET_OS == 'L'
+        COMPOSE_SEQ_LINUX(&kp MINUS &kp I)
+      #elif UNICODE_TARGET_OS == 'M'
+        COMPOSE_SEQ_MACOS(&kp LA(A) &kp I)
+      #elif UNICODE_TARGET_OS == 'W'
+        COMPOSE_SEQ_WINDOWS(&kp KP_N0 &kp KP_N2 &kp KP_N9 &kp KP_N9)
+      #endif
+    )
+    UNICODE(world_i_macron_upper, /* Ī */
+      #if UNICODE_TARGET_OS == 'L'
+        COMPOSE_SEQ_LINUX(&kp MINUS &kp LS(I))
+      #elif UNICODE_TARGET_OS == 'M'
+        COMPOSE_SEQ_MACOS(&kp LA(A) &kp LS(I))
+      #elif UNICODE_TARGET_OS == 'W'
+        COMPOSE_SEQ_WINDOWS(&kp KP_N0 &kp KP_N2 &kp KP_N9 &kp KP_N8)
+      #endif
+    )
+    world_i_macron: world_i_macron {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&world_i_macron_lower>, <&world_i_macron_upper>;
+        mods = <MOD_LSFT>;
+    };
     UNICODE(world_e_acute_lower, /* é */
       #if UNICODE_TARGET_OS == 'L'
         UNICODE_SEQ_LINUX(&kp E &kp N9)
@@ -4525,6 +4573,30 @@ macros {
         compatible = "zmk,behavior-mod-morph";
         #binding-cells = <0>;
         bindings = <&world_e_grave_lower>, <&world_e_grave_upper>;
+        mods = <MOD_LSFT>;
+    };
+    UNICODE(world_e_macron_lower, /* ē */
+      #if UNICODE_TARGET_OS == 'L'
+        COMPOSE_SEQ_LINUX(&kp MINUS &kp E)
+      #elif UNICODE_TARGET_OS == 'M'
+        COMPOSE_SEQ_MACOS(&kp LA(A) &kp E)
+      #elif UNICODE_TARGET_OS == 'W'
+        COMPOSE_SEQ_WINDOWS(&kp KP_N0 &kp KP_N2 &kp KP_N7 &kp KP_N5)
+      #endif
+    )
+    UNICODE(world_e_macron_upper, /* Ē */
+      #if UNICODE_TARGET_OS == 'L'
+        COMPOSE_SEQ_LINUX(&kp MINUS &kp LS(E))
+      #elif UNICODE_TARGET_OS == 'M'
+        COMPOSE_SEQ_MACOS(&kp LA(A) &kp LS(E))
+      #elif UNICODE_TARGET_OS == 'W'
+        COMPOSE_SEQ_WINDOWS(&kp KP_N0 &kp KP_N2 &kp KP_N7 &kp KP_N4)
+      #endif
+    )
+    world_e_macron: world_e_macron {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&world_e_macron_lower>, <&world_e_macron_upper>;
         mods = <MOD_LSFT>;
     };
     UNICODE(world_e_ae_lower, /* æ */
@@ -4695,6 +4767,30 @@ macros {
         bindings = <&world_a_ring_lower>, <&world_a_ring_upper>;
         mods = <MOD_LSFT>;
     };
+    UNICODE(world_a_macron_lower, /* ā */
+      #if UNICODE_TARGET_OS == 'L'
+        COMPOSE_SEQ_LINUX(&kp MINUS &kp A)
+      #elif UNICODE_TARGET_OS == 'M'
+        COMPOSE_SEQ_MACOS(&kp LA(A) &kp A)
+      #elif UNICODE_TARGET_OS == 'W'
+        COMPOSE_SEQ_WINDOWS(&kp KP_N0 &kp KP_N2 &kp KP_N5 &kp KP_N7)
+      #endif
+    )
+    UNICODE(world_a_macron_upper, /* Ā */
+      #if UNICODE_TARGET_OS == 'L'
+        COMPOSE_SEQ_LINUX(&kp MINUS &kp LS(A))
+      #elif UNICODE_TARGET_OS == 'M'
+        COMPOSE_SEQ_MACOS(&kp LA(A) &kp LS(A))
+      #elif UNICODE_TARGET_OS == 'W'
+        COMPOSE_SEQ_WINDOWS(&kp KP_N0 &kp KP_N2 &kp KP_N5 &kp KP_N6)
+      #endif
+    )
+    world_a_macron: world_a_macron {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&world_a_macron_lower>, <&world_a_macron_upper>;
+        mods = <MOD_LSFT>;
+    };
     UNICODE(world_y_acute_lower, /* ý */
       #if UNICODE_TARGET_OS == 'L'
         UNICODE_SEQ_LINUX(&kp F &kp D)
@@ -4863,6 +4959,30 @@ macros {
         bindings = <&world_o_tilde_lower>, <&world_o_tilde_upper>;
         mods = <MOD_LSFT>;
     };
+    UNICODE(world_o_macron_lower, /* ō */
+      #if UNICODE_TARGET_OS == 'L'
+        COMPOSE_SEQ_LINUX(&kp MINUS &kp O)
+      #elif UNICODE_TARGET_OS == 'M'
+        COMPOSE_SEQ_MACOS(&kp LA(A) &kp O)
+      #elif UNICODE_TARGET_OS == 'W'
+        COMPOSE_SEQ_WINDOWS(&kp KP_N0 &kp KP_N3 &kp KP_N3 &kp KP_N3)
+      #endif
+    )
+    UNICODE(world_o_macron_upper, /* Ō */
+      #if UNICODE_TARGET_OS == 'L'
+        COMPOSE_SEQ_LINUX(&kp MINUS &kp LS(O))
+      #elif UNICODE_TARGET_OS == 'M'
+        COMPOSE_SEQ_MACOS(&kp LA(A) &kp LS(O))
+      #elif UNICODE_TARGET_OS == 'W'
+        COMPOSE_SEQ_WINDOWS(&kp KP_N0 &kp KP_N3 &kp KP_N3 &kp KP_N2)
+      #endif
+    )
+    world_o_macron: world_o_macron {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&world_o_macron_lower>, <&world_o_macron_upper>;
+        mods = <MOD_LSFT>;
+    };
     UNICODE(world_o_slash_lower, /* ø */
       #if UNICODE_TARGET_OS == 'L'
         UNICODE_SEQ_LINUX(&kp F &kp N8)
@@ -4983,6 +5103,126 @@ macros {
         bindings = <&world_u_grave_lower>, <&world_u_grave_upper>;
         mods = <MOD_LSFT>;
     };
+    UNICODE(world_u_macron_lower, /* ū */
+      #if UNICODE_TARGET_OS == 'L'
+        COMPOSE_SEQ_LINUX(&kp MINUS &kp U)
+      #elif UNICODE_TARGET_OS == 'M'
+        COMPOSE_SEQ_MACOS(&kp LA(A) &kp U)
+      #elif UNICODE_TARGET_OS == 'W'
+        COMPOSE_SEQ_WINDOWS(&kp KP_N0 &kp KP_N3 &kp KP_N6 &kp KP_N3)
+      #endif
+    )
+    UNICODE(world_u_macron_upper, /* Ū */
+      #if UNICODE_TARGET_OS == 'L'
+        COMPOSE_SEQ_LINUX(&kp MINUS &kp LS(U))
+      #elif UNICODE_TARGET_OS == 'M'
+        COMPOSE_SEQ_MACOS(&kp LA(A) &kp LS(U))
+      #elif UNICODE_TARGET_OS == 'W'
+        COMPOSE_SEQ_WINDOWS(&kp KP_N0 &kp KP_N3 &kp KP_N6 &kp KP_N2)
+      #endif
+    )
+    world_u_macron: world_u_macron {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&world_u_macron_lower>, <&world_u_macron_upper>;
+        mods = <MOD_LSFT>;
+    };
+    UNICODE(world_g_cedilla_lower, /* ģ */
+      #if UNICODE_TARGET_OS == 'L'
+        COMPOSE_SEQ_LINUX(&kp COMMA &kp G)
+      #elif UNICODE_TARGET_OS == 'M'
+        COMPOSE_SEQ_MACOS(&kp LA(C) &kp U)
+      #elif UNICODE_TARGET_OS == 'W'
+        COMPOSE_SEQ_WINDOWS(&kp KP_N0 &kp KP_N2 &kp KP_N9 &kp KP_N1)
+      #endif
+    )
+    UNICODE(world_g_cedilla_upper, /* Ģ */
+      #if UNICODE_TARGET_OS == 'L'
+        COMPOSE_SEQ_LINUX(&kp COMMA &kp LS(G))
+      #elif UNICODE_TARGET_OS == 'M'
+        COMPOSE_SEQ_MACOS(&kp LA(C) &kp LS(G))
+      #elif UNICODE_TARGET_OS == 'W'
+        COMPOSE_SEQ_WINDOWS(&kp KP_N0 &kp KP_N2 &kp KP_N9 &kp KP_N0)
+      #endif
+    )
+    world_g_cedilla: world_g_cedilla {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&world_g_cedilla_lower>, <&world_g_cedilla_upper>;
+        mods = <MOD_LSFT>;
+    };
+    UNICODE(world_k_cedilla_lower, /* ķ */
+      #if UNICODE_TARGET_OS == 'L'
+        COMPOSE_SEQ_LINUX(&kp COMMA &kp K)
+      #elif UNICODE_TARGET_OS == 'M'
+        COMPOSE_SEQ_MACOS(&kp LA(C) &kp K)
+      #elif UNICODE_TARGET_OS == 'W'
+        COMPOSE_SEQ_WINDOWS(&kp KP_N0 &kp KP_N3 &kp KP_N1 &kp KP_N1)
+      #endif
+    )
+    UNICODE(world_k_cedilla_upper, /* Ķ */
+      #if UNICODE_TARGET_OS == 'L'
+        COMPOSE_SEQ_LINUX(&kp COMMA &kp LS(K))
+      #elif UNICODE_TARGET_OS == 'M'
+        COMPOSE_SEQ_MACOS(&kp LA(C) &kp LS(K))
+      #elif UNICODE_TARGET_OS == 'W'
+        COMPOSE_SEQ_WINDOWS(&kp KP_N0 &kp KP_N3 &kp KP_N1 &kp KP_N0)
+      #endif
+    )
+    world_k_cedilla: world_k_cedilla {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&world_k_cedilla_lower>, <&world_k_cedilla_upper>;
+        mods = <MOD_LSFT>;
+    };
+    UNICODE(world_l_cedilla_lower, /* ļ */
+      #if UNICODE_TARGET_OS == 'L'
+        COMPOSE_SEQ_LINUX(&kp COMMA &kp L)
+      #elif UNICODE_TARGET_OS == 'M'
+        COMPOSE_SEQ_MACOS(&kp LA(C) &kp L)
+      #elif UNICODE_TARGET_OS == 'W'
+        COMPOSE_SEQ_WINDOWS(&kp KP_N0 &kp KP_N3 &kp KP_N1 &kp KP_N6)
+      #endif
+    )
+    UNICODE(world_l_cedilla_upper, /* Ļ */
+      #if UNICODE_TARGET_OS == 'L'
+        COMPOSE_SEQ_LINUX(&kp COMMA &kp LS(L))
+      #elif UNICODE_TARGET_OS == 'M'
+        COMPOSE_SEQ_MACOS(&kp LA(C) &kp LS(L))
+      #elif UNICODE_TARGET_OS == 'W'
+        COMPOSE_SEQ_WINDOWS(&kp KP_N0 &kp KP_N3 &kp KP_N1 &kp KP_N5)
+      #endif
+    )
+    world_l_cedilla: world_l_cedilla {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&world_l_cedilla_lower>, <&world_l_cedilla_upper>;
+        mods = <MOD_LSFT>;
+    };
+    UNICODE(world_s_caron_lower, /* š */
+      #if UNICODE_TARGET_OS == 'L'
+        COMPOSE_SEQ_LINUX(&kp C &kp S)
+      #elif UNICODE_TARGET_OS == 'M'
+        COMPOSE_SEQ_MACOS(&kp LA(V) &kp S)
+      #elif UNICODE_TARGET_OS == 'W'
+        COMPOSE_SEQ_WINDOWS(&kp KP_N0 &kp KP_N1 &kp KP_N5 &kp KP_N4)
+      #endif
+    )
+    UNICODE(world_s_caron_upper, /* Š */
+      #if UNICODE_TARGET_OS == 'L'
+        COMPOSE_SEQ_LINUX(&kp C &kp LS(S))
+      #elif UNICODE_TARGET_OS == 'M'
+        COMPOSE_SEQ_MACOS(&kp LA(V) &kp LS(S))
+      #elif UNICODE_TARGET_OS == 'W'
+        COMPOSE_SEQ_WINDOWS(&kp KP_N0 &kp KP_N1 &kp KP_N3 &kp KP_N8)
+      #endif
+    )
+    world_s_caron: world_s_caron {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&world_s_caron_lower>, <&world_s_caron_upper>;
+        mods = <MOD_LSFT>;
+    };
     UNICODE(world_n_tilde_lower, /* ñ */
       #if UNICODE_TARGET_OS == 'L'
         UNICODE_SEQ_LINUX(&kp F &kp N1)
@@ -5005,6 +5245,78 @@ macros {
         compatible = "zmk,behavior-mod-morph";
         #binding-cells = <0>;
         bindings = <&world_n_tilde_lower>, <&world_n_tilde_upper>;
+        mods = <MOD_LSFT>;
+    };
+    UNICODE(world_n_cedilla_lower, /* ņ */
+      #if UNICODE_TARGET_OS == 'L'
+        COMPOSE_SEQ_LINUX(&kp COMMA &kp N)
+      #elif UNICODE_TARGET_OS == 'M'
+        COMPOSE_SEQ_MACOS(&kp LA(C) &kp N)
+      #elif UNICODE_TARGET_OS == 'W'
+        COMPOSE_SEQ_WINDOWS(&kp KP_N0 &kp KP_N3 &kp KP_N2 &kp KP_N6)
+      #endif
+    )
+    UNICODE(world_n_cedilla_upper, /* Ņ */
+      #if UNICODE_TARGET_OS == 'L'
+        COMPOSE_SEQ_LINUX(&kp COMMA &kp LS(N))
+      #elif UNICODE_TARGET_OS == 'M'
+        COMPOSE_SEQ_MACOS(&kp LA(C) &kp LS(N))
+      #elif UNICODE_TARGET_OS == 'W'
+        COMPOSE_SEQ_WINDOWS(&kp KP_N0 &kp KP_N3 &kp KP_N2 &kp KP_N5)
+      #endif
+    )
+    world_n_cedilla: world_n_cedilla {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&world_n_cedilla_lower>, <&world_n_cedilla_upper>;
+        mods = <MOD_LSFT>;
+    };
+    UNICODE(world_z_caron_lower, /* ž */
+      #if UNICODE_TARGET_OS == 'L'
+        COMPOSE_SEQ_LINUX(&kp C &kp Z)
+      #elif UNICODE_TARGET_OS == 'M'
+        COMPOSE_SEQ_MACOS(&kp LA(V) &kp Z)
+      #elif UNICODE_TARGET_OS == 'W'
+        COMPOSE_SEQ_WINDOWS(&kp KP_N0 &kp KP_N1 &kp KP_N5 &kp KP_N8)
+      #endif
+    )
+    UNICODE(world_z_caron_upper, /* Ž */
+      #if UNICODE_TARGET_OS == 'L'
+        COMPOSE_SEQ_LINUX(&kp C &kp LS(Z))
+      #elif UNICODE_TARGET_OS == 'M'
+        COMPOSE_SEQ_MACOS(&kp LA(V) &kp LS(Z))
+      #elif UNICODE_TARGET_OS == 'W'
+        COMPOSE_SEQ_WINDOWS(&kp KP_N0 &kp KP_N1 &kp KP_N4 &kp KP_N2)
+      #endif
+    )
+    world_z_caron: world_z_caron {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&world_z_caron_lower>, <&world_z_caron_upper>;
+        mods = <MOD_LSFT>;
+    };
+    UNICODE(world_r_cedilla_lower, /* ŗ */
+      #if UNICODE_TARGET_OS == 'L'
+        COMPOSE_SEQ_LINUX(&kp COMMA &kp N)
+      #elif UNICODE_TARGET_OS == 'M'
+        COMPOSE_SEQ_MACOS(&kp LA(C) &kp N)
+      #elif UNICODE_TARGET_OS == 'W'
+        COMPOSE_SEQ_WINDOWS(&kp KP_N0 &kp KP_N3 &kp KP_N4 &kp KP_N3)
+      #endif
+    )
+    UNICODE(world_r_cedilla_upper, /* Ŗ */
+      #if UNICODE_TARGET_OS == 'L'
+        COMPOSE_SEQ_LINUX(&kp COMMA &kp LS(N))
+      #elif UNICODE_TARGET_OS == 'M'
+        COMPOSE_SEQ_MACOS(&kp LA(C) &kp LS(N))
+      #elif UNICODE_TARGET_OS == 'W'
+        COMPOSE_SEQ_WINDOWS(&kp KP_N0 &kp KP_N3 &kp KP_N4 &kp KP_N2)
+      #endif
+    )
+    world_r_cedilla: world_r_cedilla {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&world_r_cedilla_lower>, <&world_r_cedilla_upper>;
         mods = <MOD_LSFT>;
     };
     UNICODE(world_quotes_left_angle_lower, /* ‹ */
